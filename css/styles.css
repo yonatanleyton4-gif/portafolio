@@ -1,43 +1,72 @@
-* {
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body{
-    background-color: #121212;
-    color:#ffffff;
-    line-height:1.6;
+    padding: 20px;
 }
 
 main {
-    max-width:800px;
-    margin:50px auto;
-    background-color:#1e1e1e;
-    padding:40px ;
-    border-radius:15px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.5);
-    text-align:center;
-}
-header{
+    border: gray 2px solid;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding:60px 20px;
-    background:linear-gradient(135deg,#1e1e1e 0%,#333333 100%);
-    border-bottom:2px solid #00dbde;
 }
 
-header h1{
-
-    font-size:2.5rem;
-    color:#00dbde;
-    margin-bottom:10px;
+section {
+    border: #e0e0e0 2px solid;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: left; /* El texto de las secciones se lee mejor a la izquierda */
 }
 
-section{
-    border-right: #00dbde 2px solid;
-    margin: 30px;
-    padding:20px;
-    background-color:#2c2c2c;
-    border-radius:10px;
+/* --- MENÚ DE NAVEGACIÓN --- */
+.menu-iconos {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Para que en celulares se acomoden abajo */
+    gap: 10px;
+}
+
+.menu-iconos li {
+    border: gray 2px solid;
+    border-radius: 12px;
+    padding: 10px;
+    width: 110px; /* Ancho fijo para que todos los botones del menú midan lo mismo */
+    transition: 0.3s;
+}
+
+
+
+.menu-iconos a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Icono arriba, texto abajo */
+    align-items: center;
+   
+}
+
+/* Control de los iconos */
+.menu-iconos img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.menu-iconos span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* --- SECCIÓN DE HABILIDADES Y CONTACTO --- */
+section ul {
+    list-style: none;
+    padding: 0;
 }
