@@ -11,6 +11,15 @@ body{
     line-height: 1.6;
 }
 
+main {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #1e1e1e;
+    padding: 40px ;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+}
 header{
     text-align: center;
     padding: 60px 20 px;
