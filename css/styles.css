@@ -35,7 +35,7 @@ header h1{
 }
 
 section{
-    margin-right: #00dbde 4px;
+    border-right: #00dbde 2px solid;
     margin: 30px;
     padding:20px;
     background-color:#2c2c2c;
