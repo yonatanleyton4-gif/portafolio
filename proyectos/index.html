@@ -1,63 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
-    <link rel="stylesheet" href="portafolio/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos</title>
+  <!-- Ruta relativa desde proyectos/ hacia css/styles.css en la raíz -->
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    
-    <main>
+  <main>
+    <header>
+      <h1>Proyectos</h1>
+    </header>
 
-     <header>
-        <h1>Proyectos</h1>
-     </header>
-      <nav>
-            <ul class="menu-iconos">
-                <li>
-                    <a href="index.html">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" alt="Inicio">
-                        <span>Inicio</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="about.html">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Sobre mí">
-                        <span>Sobre mí</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="proyectos/index.html">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1085/1085461.png" alt="Proyectos">
-                        <span>Proyectos</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="contact.html">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2099/2099199.png" alt="Contacto">
-                        <span>Contacto</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <nav>
+      <ul class="menu-iconos">
+        <li>
+          <a href="../index.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" alt="Inicio">
+            <span>Inicio</span>
+          </a>
+        </li>
+        <li>
+          <a href="../about.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Sobre mí">
+            <span>Sobre mí</span>
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/1085/1085461.png" alt="Proyectos">
+            <span>Proyectos</span>
+          </a>
+        </li>
+        <li>
+          <a href="../contact.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/2099/2099199.png" alt="Contacto">
+            <span>Contacto</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-     <section>
-        <article>
-            <h2>Proyecto 1: Sitio Web Personal</h2>
-            <p>Descripción: Un sitio web personal para mostrar mi portafolio y blog.</p>
-            <p>Tecnologías: HTML, CSS, JavaScript</p>
-        </article>
-        <article>
-            <h2>Proyecto 2: Expedientes de personajes animados</h2>
-            <p>Descripción: Una colección de expedientes detallados de personajes animados populares.</p>
-            <p>Tecnologías: HTML, CSS</p>
-            <p>!PROXIMAMENTE!</p>
-            </h2>
-        </article>
-     </section>
+    <section class="proyectos-list">
+      <article class="proyecto">
+        <h2>Proyecto 1: Sitio Web Personal</h2>
+        <p>Descripción: Un sitio web personal para mostrar mi portafolio y blog.</p>
+        <p>Tecnologías: HTML, CSS, JavaScript</p>
+      </article>
 
-    </main>
-    
+      <article class="proyecto coming-soon">
+        <h2>Proyecto 2: Expedientes de personajes animados</h2>
+        <p>Descripción: Una colección de expedientes detallados de personajes animados populares.</p>
+        <p>Tecnologías: HTML, CSS</p>
+        <p class="badge">¡PRÓXIMAMENTE!</p>
+      </article>
+    </section>
+  </main>
 </body>
 </html>
