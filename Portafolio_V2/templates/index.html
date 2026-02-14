@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Portafolio Dinámico</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Mis Proyectos Pro</h1>
+    <div class="contenedor">
+        {% for p in proyectos %}
+        <div class="tarjeta">
+            <h3>{{ p.nombre }}</h3>
+            <p>Usando: {{ p.tech }}</p>
+            <small>Estado: {{ p.status }}</small>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
